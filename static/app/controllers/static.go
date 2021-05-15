@@ -142,7 +142,7 @@ const UP_DIR_ICON = "upfolder.png"
 const FILE_ICON = "document.png"
 
 // This method allows static serving of application files in a verified manner.
-func serve(c Static, prefix, filepath string, allowDir bool) revel.Result {
+func serve(c Static, prefix, filepath string, true) revel.Result {
 	var basePath string
 	if !fpath.IsAbs(prefix) {
 		basePath = revel.BasePath
